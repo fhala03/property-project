@@ -1,11 +1,53 @@
-import { type AppType } from "next/app";
-
+import type { AppProps } from "next/app";
 import { api } from "@/utils/api";
-
+import Head from "next/head";
 import "@/styles/globals.css";
+import type { ReactElement, ReactNode } from "react";
+import type { NextPage } from "next";
 
-const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+export type NextPageWithLayout<P = NonNullable<unknown>, IP = P> = NextPage<
+  P,
+  IP
+> & {
+  getLayout?: (page: ReactElement) => ReactNode;
 };
 
-export default api.withTRPC(MyApp);
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+function App({ Component, pageProps }: AppPropsWithLayout) {
+  const layoutForPage = Component.getLayout
+    ? Component.getLayout
+    : (page: JSX.Element) => page;
+
+  return (
+    <>
+      <Head>
+        <title>CONVERTEXT | Convert Text</title>
+        <meta
+          name="description"
+          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+        />
+        <meta property="og:title" content="CONVERTEXT | Convert Text" />
+        <meta
+          property="og:description"
+          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+        />
+        <meta
+          property="og:image"
+          content="https://convert-text-app.vercel.app/background.png"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      {/* <div className="relative">
+        <Book />
+      </div> */}
+
+      {layoutForPage(<Component {...pageProps} />)}
+    </>
+  );
+}
+
+export default api.withTRPC(App);
