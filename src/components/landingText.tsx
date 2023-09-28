@@ -10,25 +10,25 @@ const LandingText = () => {
       <Image alt="Image" src="/image01.jpeg" fill className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 to-black"></div>
 
-      <div className="relative top-[58%] sm:top-[77%] lg:top-[47%] flex flex-col items-end text-center text-background maincol">
+      <div className="maincol relative top-[58%] flex flex-col items-end text-center text-background sm:top-[77%] lg:top-[47%]">
         <motion.h1
           className="text-right text-7xl font-extrabold uppercase tracking-tight lg:text-9xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.4 }}
         >
-          Luxury <br /> Villa <br />
+          Luxury <br /> Studio <br />
           <motion.span
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 5, bounce: 0.4 }}
             className="text-primary"
           >
-            On Sale
+            La Vita
           </motion.span>
         </motion.h1>
 
-        <div className="flex flex-col md:flex-row items-end justify-end gap-2">
+        <div className="flex flex-col items-end justify-end gap-2 md:flex-row">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
