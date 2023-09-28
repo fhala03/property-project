@@ -17,14 +17,14 @@ const LandingText = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1.5, bounce: 0.4 }}
         >
-          Luxury <br /> Studio <br />
+          Luxury <br /> Mansion <br />
           <motion.span
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 5, bounce: 0.4 }}
             className="text-primary"
           >
-            La Vita
+            For rent
           </motion.span>
         </motion.h1>
 

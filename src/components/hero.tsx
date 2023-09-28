@@ -19,7 +19,7 @@ const Hero = () => {
               <span className="text-lg font-light text-background">Garden</span>
             </div>
           </div>
-          <Plus strokeWidth={0.7} className="h-16 w-16 text-primary"/>
+          <Plus strokeWidth={0.7} className="h-16 w-16 text-primary" />
           <div className="flex gap-20">
             <div className="flex w-fit flex-col items-center gap-1">
               <ChefHat className="h-8 w-8 text-primary" />
@@ -38,7 +38,7 @@ const Hero = () => {
       </div>
       <Image
         alt="Image"
-        src={"/image01.jpeg"}
+        src={"/image04.jpeg"}
         className="w-full object-cover md:w-1/2 lg:w-full"
         height={1920}
         width={1080}

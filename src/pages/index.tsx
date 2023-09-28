@@ -8,6 +8,7 @@ import Features from "@/components/features";
 import Owner from "@/components/owner";
 import Footer from "@/components/footer";
 import Faq from "@/components/faq";
+import Reviews from "@/components/reviews";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Location />
         <Features />
         <Owner />
+        <Reviews />
         <Faq />
         <Footer />
       </div>

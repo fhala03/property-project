@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import React from "react";
 
@@ -10,7 +11,8 @@ const Owner = () => {
             Meet the owner
           </h1>
         </div>
-        <div className="maincol mt-8 flex h-full w-full items-center justify-center bg-primary py-4">
+
+        <div className="maincol mt-8 flex h-full w-full items-center justify-center bg-gradient-to-r from-primary via-primary to-primary/75 py-4">
           <h1 className="border-l pl-4 italic text-background">
             Nestled along the pristine coastline, <br /> our luxury villa offers
             an unparalleled lifestyle of opulence and <br /> tranquility. The
@@ -21,10 +23,10 @@ const Owner = () => {
         </div>
       </section>
 
-      <div className="flex h-[450px] flex-col gap-4 py-4 lg:flex-row">
+      <div className="flex flex-col gap-4 py-4 lg:flex-row">
         <Image
           alt="Image"
-          src={"/image01.jpeg"}
+          src={"/image04.jpeg"}
           className="w-full object-cover lg:w-1/3"
           height={1920}
           width={1080}
