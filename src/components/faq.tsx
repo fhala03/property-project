@@ -31,7 +31,7 @@ const Faq = () => {
       <div className="flex h-fit flex-col gap-8 py-4 lg:h-[450px] lg:flex-row">
         <Image
           alt="Image"
-          src={"/image01.jpeg"}
+          src={"/image04.jpeg"}
           className="w-full object-cover"
           height={1920}
           width={1080}

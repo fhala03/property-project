@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const LandingText = () => {
   return (
     <div className="relative h-screen w-full">
-      <Image alt="Image" src="/image01.jpeg" fill className="object-cover" />
+      <Image alt="Image" src="/image04.jpeg" fill className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/20 to-black"></div>
 
       <div className="maincol relative top-[58%] flex flex-col items-end text-center text-background sm:top-[77%] lg:top-[47%]">

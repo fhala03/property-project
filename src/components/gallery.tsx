@@ -24,28 +24,28 @@ const Gallery = () => {
       <div className="flex h-[450px] gap-2 overflow-x-auto overflow-y-hidden pb-2">
         <Image
           alt="Image"
-          src={"/image01.jpeg"}
+          src={"/image04.jpeg"}
           className="h-[500px] w-full object-cover"
           height={1920}
           width={1080}
         />
         <Image
           alt="Image"
-          src={"/image01.jpeg"}
+          src={"/image04.jpeg"}
           className="h-[500px] w-full object-cover"
           height={1920}
           width={1080}
         />
         <Image
           alt="Image"
-          src={"/image01.jpeg"}
+          src={"/image04.jpeg"}
           className="h-[500px] w-full object-cover"
           height={1920}
           width={1080}
         />
         <Image
           alt="Image"
-          src={"/image01.jpeg"}
+          src={"/image04.jpeg"}
           className="h-[500px] w-full object-cover"
           height={1920}
           width={1080}
