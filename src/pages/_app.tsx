@@ -24,15 +24,18 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <Head>
-        <title>CONVERTEXT | Convert Text</title>
+        <title>Discover Your Dream Properties| Property Site</title>
         <meta
           name="description"
-          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+          content="Explore a curated collection of exquisite properties. Find your perfect home or investment opportunity."
         />
-        <meta property="og:title" content="CONVERTEXT | Convert Text" />
+        <meta
+          property="og:title"
+          content="Discover Your Dream Properties | Property Site"
+        />
         <meta
           property="og:description"
-          content="Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online"
+          content="Explore a curated collection of exquisite properties. Find your perfect home or investment opportunity."
         />
         <meta
           property="og:image"
@@ -40,10 +43,6 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* <div className="relative">
-        <Book />
-      </div> */}
 
       {layoutForPage(<Component {...pageProps} />)}
     </>
