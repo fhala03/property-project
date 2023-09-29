@@ -29,7 +29,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://convert-text-app.vercel.app/background.png"
+          content="https://convert-text-app.vercel.app/background1.png"
         />
         <link rel="icon" href="/favicon.png" />
         <link rel="icon" href="/favicon.png" />
