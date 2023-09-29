@@ -12,7 +12,7 @@ const ErrorPage = () => {
           name="description"
           content="LinkTab is a simple web app that allows you to save and organize web links. App is built with the T3 stack."
         />
-        <link rel="icon" href="/link.svg" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="flex h-screen flex-col items-center justify-center">

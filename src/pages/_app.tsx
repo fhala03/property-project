@@ -41,7 +41,7 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
           property="og:image"
           content="https://convert-text-app.vercel.app/background.png"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       {layoutForPage(<Component {...pageProps} />)}
