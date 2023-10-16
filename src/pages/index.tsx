@@ -9,6 +9,7 @@ import Owner from "@/components/owner";
 import Footer from "@/components/footer";
 import Faq from "@/components/faq";
 import Reviews from "@/components/reviews";
+import Hero2 from "@/components/hero2";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
         <Hero />
         <Gallery />
         <Location />
+        <Hero2 />
         <Features />
         <Owner />
         <Reviews />
